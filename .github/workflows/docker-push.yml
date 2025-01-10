@@ -21,8 +21,8 @@ jobs:
     - name: login to Docker Hub
       uses: opspresso/action-docker@master
       env:
-        username: ${{ vars.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
+        PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
       run: |
