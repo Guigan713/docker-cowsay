@@ -20,7 +20,7 @@ jobs:
 
     - name: login to Docker Hub
       uses: opspresso/action-docker@master
-      with:
+      env:
         username: ${{ vars.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
